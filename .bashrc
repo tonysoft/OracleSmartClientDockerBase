@@ -11,8 +11,8 @@ if [ -f /etc/bashrc ]; then
         . /etc/bashrc
 fi
 
-export LD_LIBRARY_PATH=/oracleClient64/lib:$LD_LIBRARY_PATH
-export OCI_HOME=/oracleClient64
+export LD_LIBRARY_PATH=/home/nodester/DevTools/oracle/client64/lib:$LD_LIBRARY_PATH
+export OCI_HOME=/home/nodester/DevTools/oracle/client64
 export OCI_LIB_DIR=$OCI_HOME/lib
 export OCI_INCLUDE_DIR=$OCI_HOME/sdk/include
 export OCI_VERSION=12

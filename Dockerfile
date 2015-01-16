@@ -4,5 +4,8 @@ FROM cjonagam/centos-nodejs-0.10.33
 MAINTAINER Tony Sukiennik tsukiennik@equinix.com
 
 ADD .bashrc /root/.bashrc
-ADD client64 /oracleClient64
+ADD .bashrc /etc/environment
+RUN mkdir -p /home/nodester/DevTools/oracle
+ADD . /home/nodester/DevTools/oracle
+RUN yum install -y libaio
 
